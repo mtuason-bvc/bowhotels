@@ -1,13 +1,24 @@
+:root {
+    --tropicalRainForest: rgb(1, 97, 96);
+    --cadetBlue: rgb(97, 158, 155);
+    --mistyRose: rgb(255, 236, 225);
+    --tan: rgb(213, 177, 136);
+    --jasperOrange: rgb(215, 141, 70);
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    /* background-color: var(--mistyRose); */
+    background-image: linear-gradient(to bottom right, var(--tropicalRainForest), var(--cadetBlue));
 }
 
 header {
     background-color: #333;
     color: white;
+    /* color: rgb(1, 97, 96); */
     padding: 10px 0;
     text-align: center;
 }
@@ -32,25 +43,39 @@ nav ul li a {
 }
 
 .intro, .property-details {
-    margin: 20px;
+    margin: 20px auto;
+    width: 1000px;
 }
+
 
 .properties {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px;
+    margin: 20px auto 100px;
+    /* width: 1000px; */
 }
 
 .property {
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgb(255, 236, 225);
     border: 1px solid #ddd;
-    padding: 20px;
-    width: 28%;
+    padding: 10px;
+    width: 40%;
     margin: 10px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.property img{
+    width: 100%;
+    height: 85%;
+}
+
+.coming-soon {
+    background-color: #f0f0f0;
+}
+
 
 .property h3 {
     margin: 0 0 10px 0;
@@ -61,12 +86,9 @@ nav ul li a {
     color: #333;
 }
 
-.coming-soon {
-    background-color: #f0f0f0;
-}
 
 footer {
-    background-color: #333;
+    background-color: rgb(97, 158, 155);
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -76,11 +98,14 @@ footer {
 }
 
 .contact-info, .contact-form {
-    margin: 20px;
+    margin: 20px auto;
+    width: 800px;
 }
 
+
 .contact-details {
-    background-color: #fff;
+    
+    background-color: var(--mistyRose);
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -92,7 +117,8 @@ footer {
 }
 
 .contact-form {
-    background-color: #fff;
+    margin: 20px auto 100px; 
+    background-color: var(--mistyRose);
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -122,12 +148,12 @@ footer {
 
 button[type="submit"] {
     padding: 10px;
-    background-color: #333;
+    background-color:rgb(97, 158, 155);
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #555;
+    background-color: rgb(1, 97, 96);
 }
