@@ -8,7 +8,7 @@
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Trirong", Arial, sans-serif;
     margin: 0;
     padding: 0;
     /* background-color: var(--mistyRose); */
@@ -17,7 +17,7 @@ body {
 
 header {
     background-color: #333;
-    color: white;
+    color: var(--mistyRose);
     /* color: rgb(1, 97, 96); */
     padding: 10px 0;
     text-align: center;
@@ -38,22 +38,28 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--mistyRose);
     text-decoration: none;
 }
 
-.intro, .property-details {
+.intro{
     margin: 20px auto;
-    width: 1000px;
+    width: 1200px; 
+    color: var(--mistyRose);
 }
+ .property-details {
+    margin: 20px auto;
+    /* width: 1200px; */
+}
+
 
 
 .properties {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin: 20px auto 100px;
-    /* width: 1000px; */
+
 }
 
 .property {
@@ -64,7 +70,7 @@ nav ul li a {
     width: 40%;
     margin: 10px;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(215, 141, 70, 0.9);
 }
 
 .property img{
@@ -88,8 +94,8 @@ nav ul li a {
 
 
 footer {
-    background-color: rgb(97, 158, 155);
-    color: white;
+    background-color: #333;
+    color: var(--mistyRose);
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -108,7 +114,7 @@ footer {
     background-color: var(--mistyRose);
     padding: 20px;
     border: 1px solid #ddd;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(215, 141, 70, 0.9);
     margin-bottom: 20px;
 }
 
@@ -121,7 +127,7 @@ footer {
     background-color: var(--mistyRose);
     padding: 20px;
     border: 1px solid #ddd;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(215, 141, 70, 0.9);
 }
 
 .contact-form form {
@@ -149,7 +155,7 @@ footer {
 button[type="submit"] {
     padding: 10px;
     background-color:rgb(97, 158, 155);
-    color: white;
+    color: var(--mistyRose);
     border: none;
     cursor: pointer;
 }
