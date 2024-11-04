@@ -18,9 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         
         require_once "dbh.inc.php";
         $query = "INSERT INTO contact (full_name, email, phone, user_message)
-        VALUES (?, ?, ?, ?);";
+        VALUES (:name, :email, :phone, :message);";
         $stmt = $pdo->prepare($query);
-        $stmt->execute([$name, $email, $phone, $message]);
+        $stmt->bindParam(":name", $name);
+        $stmt->bindParam(":email", $email);
+        $stmt->bindParam(":phone", $phone);
+        $stmt->bindParam(":message", $message);
+        $stmt->execute();
+        // $stmt->execute([$name, $email, $phone, $message]);
         $pdo = null;
         $stmt = null;
         header("Location: ../contact.html");
